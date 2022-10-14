@@ -1,64 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" target="_blank">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" target="_blank">
 	<title>Michael Pace</title>
     <style>
         body {
-            color: #00303b;
-            background-color: #f1f2da;
+            color: #150413;
+            background-color: #ffffd1;
             font-size: 1.3em;
             padding: 40px;
         }
         h1, h2 {
-            color: #ff7777;
+            color: #635c6d;
         }
         a {
             font-weight: bold;
-            color: #00303b;
+            color: #635c6d;
         }
         .tile {
-            background-color: #ffce96;
-            width: 80%;
             padding: 10px;
             margin-bottom: 20px;
+            text-align: left;
+        }
+        li {
+            list-style-type: none;
+        }
+        li:before {
+            content: "\27AF\00a0";
+        }
+        img {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        #image {
+            position: absolute;
+            width: 50%;
+            left: 0px;
+        }
+        #tiles-container {
+            position: absolute;
+            width: 50%;
+            right: 0px;
+        }
+        #content {
+            position: relative;
+            margin: auto;
+            width: 80%;
+        }
+        .title-of-work {
+            font-style: italic;
+        }
+        .subheading {
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-    <div id="tiles-container">
-        <div class="tile">
-            <h1>Hello!</h1>
-            <p>I'm a software engineer and a musician.</p>
+    <div id="content" target="_blank">
+        <div id="image" target="_blank">
+            <img src="https://pbs.twimg.com/profile_images/1577920347331960832/5-SjTklH_400x400.jpg" />
         </div>
-        <div class="tile">
-            <h1>Music</h1>
-            <h2>Collaborative</h2>
-            <ul>
-                <li>Soft Slice</li>
-                <li>A&#38;O</li>
-                <li>Agent A &#38; Omae</li>
-            </ul>
-            <h2>Solo</h2>
-            <ul>
-                <li>Onion Slice</li>
-                <li>Omae</li>
-            </ul>
-        </div>
-        <div class="tile">
-            <h1>Talks</h1>
-            <ul>
-                <li><a href="https://drive.google.com/file/d/1FwTnfT9UW5cU9wLlyMcta_5CVb87Btsv/view?usp=sharing">A Tech Debt Case Study</a>, at an <a href="https://www.meetup.com/iosoho/">iOSoho</a> meetup on January 14, 2019. The first few minutes didn't make it into the recording.</li>
-            </ul>
-        </div>
-        <div class="tile">
-            <h1>Other links</h1>
-            <ul>
-                <li><a href="https://twitter.com/PaztaStudios">Twitter</a></li>
-                <li><a href="https://www.last.fm/user/mspasta">Last.fm</a></li>
-                <li><a href="https://www.are.na/mchl-pc">Are.na</a></li>
-                <li><a href="https://www.youtube.com/channel/UCMoI0Ey417bgKZsoSPQJ-Cg">YouTube</a></li>
-            </ul>
+        <div id="tiles-container" target="_blank">
+            <div class="tile" target="_blank">
+                <h1>Hello!</h1>
+                <p>I'm a software engineer and a musician in Houston, Texas.</p>
+                <p>I've got over ten years of programming experience across iOS, Unity, and web.</p>
+                <p>I like video games and music a lot. My recent favorites have been the excellent <a href="https://www.inklestudios.com/sorcery/" class="title-of-work" target="_blank">Sorcery!</a> games and Robert Hood's classic album <a href="https://m-plant.bandcamp.com/album/minimal-nation" class="title-of-work" target="_blank">Minimal Nation</a>.</p>
+                <p>I'm working on an adventure-slash-music video game of my own, inspired by <a href="https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/Knytt" class="title-of-work" target="_blank">Knytt</a>. Stay tuned for updates!</p>
+            </div>
+            <div class="tile" target="_blank">
+                <h1>Music</h1>
+                <h2>Collaborative</h2>
+                <p class="subheading">All with my friend Cameron; all pop tunes.</p>
+                <ul>
+                    <li>Soft Slice (<a href="https://open.spotify.com/artist/1R0adFORuqg8uFFqNMDakp" target="_blank">spotify</a>, <a href="https://softslice.bandcamp.com/" target="_blank">bandcamp</a>)</li>
+                    <li>A&#38;O (<a href="https://open.spotify.com/artist/3ZM86NArP0MckCLqAhJ4Vd" target="_blank">spotify</a>, <a href="https://aoaoao.bandcamp.com/" target="_blank">bandcamp</a>)</li>
+                    <li>Agent A &#38; Omae (<a href="https://agentaomae.bandcamp.com/" target="_blank">bandcamp</a>)</li>
+                </ul>
+                <h2>Solo</h2>
+                <p class="subheading">Weirder stuff.</p>
+                <ul>
+                    <li>Onion Slice (<a href="https://open.spotify.com/artist/6jXs3NRR74iboecjMNXJ8c" target="_blank">spotify</a>, <a href="https://soundcloud.com/onionslice" target="_blank">soundcloud</a>)</li>
+                    <li>Omae (<a href="https://omae.bandcamp.com/" target="_blank">bandcamp</a>)</li>
+                </ul>
+            </div>
+            <div class="tile" target="_blank">
+                <h1>Talks</h1>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1FwTnfT9UW5cU9wLlyMcta_5CVb87Btsv/view?usp=sharing" class="title-of-work" target="_blank">A Tech Debt Case Study</a>, at an <a href="https://www.meetup.com/iosoho/" target="_blank">iOSoho</a> event on January 14, 2019. The first few minutes didn't make it into the recording.</li>
+                </ul>
+            </div>
+            <div class="tile" target="_blank">
+                <h1>Other links</h1>
+                <p><a href="https://github.com/michaelpace" target="_blank">github</a>, <a href="https://twitter.com/_mspasta" target="_blank">twitter</a>, <a href="https://www.last.fm/user/mspasta" target="_blank">last.fm</a>, <a href="https://www.are.na/mchl-pc" target="_blank">are.na</a>, <a href="https://www.youtube.com/channel/UCMoI0Ey417bgKZsoSPQJ-Cg" target="_blank">youtube</a>, <a href="https://www.instagram.com/michaelstuartpasta/" target="_blank">instagram</a>, <a href="https://www.linkedin.com/in/michaelstuartpace/" target="_blank">linkedin</a></p>
+            </div>
         </div>
     </div>
 </body>
